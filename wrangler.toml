@@ -1,12 +1,18 @@
-# Used for D1 migrations and local dev. It has no pages_build_output_dir, so Cloudflare Pages
-# ignores it and keeps using the bindings you set in the dashboard.
 name = "digital-wardrobe"
+main = "worker/index.ts"
 compatibility_date = "2025-01-01"
+keep_vars = true   # keeps ACCESS_TEAM_DOMAIN / ACCESS_AUD that you set in the dashboard
+
+[assets]
+directory = "./out"
+binding = "ASSETS"
+
 [[d1_databases]]
 binding = "DB"
 database_name = "wardrobe-db"
 database_id = "97b87f50-3544-4be7-80e8-bf73999d0912"
 migrations_dir = "migrations"
+
 [[r2_buckets]]
 binding = "WARDROBE_BUCKET"
 bucket_name = "wardrobe-images"

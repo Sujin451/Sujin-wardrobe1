@@ -1,1 +1,1 @@
-{ "compilerOptions": { "target": "ES2022", "module": "esnext", "moduleResolution": "bundler", "lib": ["esnext"], "types": ["@cloudflare/workers-types"], "strict": true, "noEmit": true, "skipLibCheck": true }, "include": ["./**/*.ts"] }
+{ "compilerOptions": { "target": "ES2022", "module": "esnext", "moduleResolution": "bundler", "lib": ["esnext"], "types": ["@cloudflare/workers-types"], "strict": true, "noEmit": true, "skipLibCheck": true }, "include": ["./**/*.ts", "../worker/**/*.ts"] }
