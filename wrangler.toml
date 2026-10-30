@@ -1,7 +1,7 @@
 name = "sujin-wardrobe1"
 main = "worker/index.ts"
 compatibility_date = "2025-01-01"
-keep_vars = true   # keeps ACCESS_TEAM_DOMAIN / ACCESS_AUD that you set in the dashboard
+keep_vars = false   # keeps ACCESS_TEAM_DOMAIN / ACCESS_AUD that you set in the dashboard
 
 [assets]
 directory = "./out"
