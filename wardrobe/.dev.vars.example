@@ -1,0 +1,2 @@
+# Copy to .dev.vars for LOCAL development only. Never set DEV_USER in production.
+DEV_USER=dev-user
